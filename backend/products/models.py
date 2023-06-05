@@ -14,3 +14,6 @@ class Product(models.Model):
             return f"{float(self.price) - 50:.2f}"
         else:
             return f"{float(self.price) - 15:.2f}"
+        
+    def __str__(self):
+        return self.title
