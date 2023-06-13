@@ -1,12 +1,6 @@
 import requests
 
-endpoint = "http://localhost:8000/api/products/"
-
-data = {
-    "title": "GPU",
-    "price": 11999.50
-}
+endpoint = "http://127.0.0.1:8000/api/products/"
 
 get_response = requests.get(endpoint)
-
 print(get_response.json())

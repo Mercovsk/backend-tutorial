@@ -8,7 +8,7 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = [
-            'title', 'content', 'price', 'sale_price', 'bulk_order'
+            'id', 'title', 'content', 'price', 'sale_price', 'bulk_order'
         ]
 
     def get_bulk_order(self, obj):
